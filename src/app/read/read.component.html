@@ -1,0 +1,11 @@
+<div class="right" *ngIf="tutorials">
+
+  <h3>Websites</h3>
+  <ul>
+    <li *ngFor="let tutorial of tutorials | async; let i = index">
+      <a [href]="tutorial.url" target="_blank">{{ tutorial.name }} </a>
+      <span style="cursor: pointer" (click)="delTutorial(i)"> X </span>
+    </li>
+  </ul>
+
+</div>

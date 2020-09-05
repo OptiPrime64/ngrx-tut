@@ -1,0 +1,9 @@
+span {
+  color: lightgrey;
+  font-weight: 900;
+}
+
+span:hover {
+  color: red;
+  font-weight: 900;
+}
